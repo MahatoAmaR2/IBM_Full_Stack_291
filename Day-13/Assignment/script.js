@@ -207,19 +207,29 @@ function showData(arr) {
 }
 showData(products);
 
-let cart = [];
+let cart =JSON.parse(localStorage.getItem("cartData")) || [];
 function addToCart(element, i) {
-  cart.push(element);
 
+  for (let i = 0; i < cart.length; i++) {
+   if (cart[i].id == element.id) {
+    return alert("Data already exist");
+   }
+    
+  }
+
+  cart.push(element);
   localStorage.setItem("cartData", JSON.stringify(cart));
-  console.log(cart);
+  // console.log(cart);
   getDAta()
 }
 
 function getDAta() {
   let parseData = JSON.parse(localStorage.getItem("cartData"));
-  console.log(parseData);
+  // console.log(parseData);
   
 }
 
 
+function cartPage() {
+  window.location.href = "cart.html"
+}
