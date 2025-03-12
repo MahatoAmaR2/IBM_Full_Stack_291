@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 .nav {
   width: 100%;
@@ -79,35 +80,46 @@ body {
 .nav .right .create {
   display: flex;
   align-items: center;
-  height: 35px;
+  height: 40px;
   background-color: rgb(235, 233, 233);
-  padding: 0 4px;
+  padding: 0 8px;
   border-radius: 60px;
 }
 .nav .right span {
   padding-right: 8px;
   padding-left: 8px;
   font-size: 32px;
+  font-weight: 300;
+}
+.nav .right p {
+  padding-right: 8px;
+  font-size: 14px;
 }
 .nav .right .account {
-  background-color: rgb(226, 225, 225);
+  background-color: rgb(255, 0, 0);
   /* padding: 4px; */
   display: flex;
   align-items: center;
-  font-size: 16px;
-height: 40PX;
+  font-size: 18px;
+  height: 40px;
   font-weight: 500;
+  color: white;
   border-radius: 50%;
   margin-right: 20px;
 }
-.nav .right .account P{
-  
+.nav .right .account P {
   padding: 15px;
-  
 }
 .notiimg {
   width: 40px;
   height: 40px;
   padding-left: 10px;
   padding-right: 20px;
+}
+
+
+.bars{
+  padding:0px 20px;
+  background-color: red;
+  height: 40px;
 }
