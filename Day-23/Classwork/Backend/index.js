@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
 
 app.use(userRouter)
 
+app.get("/protected", (req, res)=>{
+  res.send("User is authorized");
+  
+})
 app.listen(PORT, () => {
   console.log(`Server is running on ${PORT}`);
 });
